@@ -50,11 +50,10 @@
     "run-sequence": "1.2.2"
   },
   "engine": "node >= 0.10.x",
-  "homepage": "https://github.com/anvk/babel-npm-module-example",
+  "homepage": "https://github.com/garritfra/glujs#readme",
   "private": false,
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/garritfra/glujs/issues"
-  },
-  "homepage": "https://github.com/garritfra/glujs#readme"
+  }
 }
