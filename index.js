@@ -13,3 +13,8 @@ exports.multiply = function(a, b) {
 exports.divide = function(a, b) {
   return a / b;
 }
+//--------------------------------
+
+exports.toUpperCase = function(string) {
+  return string.toUpperCase();
+}
