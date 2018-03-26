@@ -1,5 +1,5 @@
 {
-  "name": "babel-webpack-package-boilerplate",
+  "name": "glujs",
   "version": "0.1.1",
   "description": "Simple Utility Library",
   "bin": {
