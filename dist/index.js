@@ -1,22 +1,32 @@
-"use strict";
+'use strict';
 
-System.register(["./modules/math"], function (_export, _context) {
-  "use strict";
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-  return {
-    setters: [function (_modulesMath) {
-      var _exportObj = {};
-      _exportObj.add = _modulesMath.add;
-      _exportObj.subtract = _modulesMath.subtract;
-      _exportObj.multiply = _modulesMath.multiply;
-      _exportObj.divide = _modulesMath.divide;
+var _math = require('./modules/math');
 
-      _export(_exportObj);
-    }],
-    execute: function () {
-      require("babel-core").transform("code", {
-        plugins: ["transform-es2015-modules-commonjs"]
-      });
-    }
-  };
+Object.defineProperty(exports, 'add', {
+  enumerable: true,
+  get: function get() {
+    return _math.add;
+  }
+});
+Object.defineProperty(exports, 'subtract', {
+  enumerable: true,
+  get: function get() {
+    return _math.subtract;
+  }
+});
+Object.defineProperty(exports, 'multiply', {
+  enumerable: true,
+  get: function get() {
+    return _math.multiply;
+  }
+});
+Object.defineProperty(exports, 'divide', {
+  enumerable: true,
+  get: function get() {
+    return _math.divide;
+  }
 });
