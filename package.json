@@ -1,0 +1,24 @@
+{
+  "name": "glujs",
+  "version": "0.0.0",
+  "description": "Simple Utility Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garritfra/glujs.git"
+  },
+  "keywords": [
+    "Node",
+    "Math",
+    "Utils"
+  ],
+  "author": "Garrit Franke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/garritfra/glujs/issues"
+  },
+  "homepage": "https://github.com/garritfra/glujs#readme"
+}
