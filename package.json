@@ -7,7 +7,7 @@
         "name": "Garrit Franke",
         "email": "garritfranke@gmail.com"
     },
-    "main": ".public/dist/main.bundle.js",
+    "main": "./public/dist/main.bundle.js",
     "bugs": {
         "url": "https://github.com/garritfra/glujs/issues"
     },
