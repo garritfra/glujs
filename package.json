@@ -71,5 +71,8 @@
       "PROD",
       "TEST"
     ]
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1"
   }
 }
