@@ -2,7 +2,7 @@
   "name": "glujs",
   "version": "0.0.8",
   "description": "Simple Utility Library",
-  "main": "./dist/bundle.js",
+  "main": "./index.js",
   "scripts": {
     "babel": "babel --presets es2015 ./dist/bundle.js -o dist/bundle.js",
     "start": "http-server",
