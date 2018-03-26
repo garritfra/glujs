@@ -1,15 +1,15 @@
-export function add(a, b) {
+exports.add = function(a, b) {
   return a + b;
 }
 
-export function subtract(a, b) {
+exports.subtract = function(a, b) {
   return a - b;
 }
 
-export function multiply(a, b) {
+exports.multiply = function(a, b) {
   return a * b;
 }
 
-export function divide(a, b) {
+exports.divide = function(a, b) {
   return a / b;
 }
