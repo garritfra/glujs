@@ -1,3 +1,3 @@
-import testModule from './test-file'
+import { add, subtract, multiply, divide } from "./math";
 
-testModule.test();
+export { add, subtract, multiply, divide }
