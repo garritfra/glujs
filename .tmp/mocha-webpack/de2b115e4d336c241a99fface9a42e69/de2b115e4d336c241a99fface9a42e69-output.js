@@ -6616,14 +6616,6 @@ var _math = __webpack_require__(35);
 
 var _mocha = __webpack_require__(69);
 
-/* global describe */
-
-describe('mocha and jsverify', function () {
-  property('are working', function () {
-    return true;
-  });
-});
-
 /***/ }),
 /* 37 */
 /***/ (function(module, exports, __webpack_require__) {
