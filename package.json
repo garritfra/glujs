@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/garritfra/glujs/issues"
   },
-  "homepage": "https://github.com/garritfra/glujs#readme"
+  "homepage": "https://github.com/garritfra/glujs#readme",
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0"
+  }
 }
