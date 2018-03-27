@@ -13,3 +13,15 @@ export function multiply(a, b) {
 export function divide(a, b) {
   return a / b;
 }
+
+export function sum(arr) {
+  if (typeof arr === "number") {
+    return arr;
+  }
+
+  let sum = 0;
+  arr.map(num => {
+    sum += num;
+  });
+  return sum;
+}

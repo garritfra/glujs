@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { add, subtract, multiply, divide } from "../dist/math";
+import { add, subtract, multiply, divide, sum } from "../dist/math";
 
 describe("add", () => {
   it("calculates 2 + 2 = 4", () => {
@@ -38,5 +38,15 @@ describe("Divide", () => {
   });
   it("calculates 0.5 / 0.2 = 0.1", () => {
     expect(divide(0.5, 0.2)).to.equal(2.5);
+  });
+});
+
+describe("Sum", () => {
+  it("calculates the sum of 1, 2, 3, 4, 5 = 15", () => {
+    expect(sum([1, 2, 3, 4, 5])).to.equal(15);
+  });
+
+  it("returns the only number its given", () => {
+    expect(sum(6)).to.equal(6);
   });
 });
