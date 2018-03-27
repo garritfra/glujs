@@ -18,7 +18,7 @@
     "build:source": "rimraf dist/ && babel src/ --out-dir dist/",
     "build:tests": "rimraf test-dist/ && babel test/ --out-dir test-dist/",
     "clean": "rimraf dist/ && rimraf test-dist/",
-    "test": "npm run build:tests && node node_modules/mocha/bin/mocha --reporter spec test-dist/*",
+    "test": "npm run build:tests && node node_modules/mocha/bin/mocha --all --reporter spec test-dist/*",
     "example": "node example.js"
   },
   "repository": {
