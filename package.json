@@ -16,7 +16,7 @@
     "build:tests": "rimraf test-dist/ && babel test/ --out-dir test-dist/",
     "clean": "rimraf dist/ && rimraf test-dist/",
     "build": "npm run build:source && npm run build:tests",
-    "testX": "node node_modules/mocha/bin/mocha --reporter spec test-dist/*",
+    "test": "node node_modules/mocha/bin/mocha --reporter spec test-dist/*",
     "example": "node example.js"
   },
   "repository": {
