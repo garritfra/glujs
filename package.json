@@ -11,7 +11,10 @@
     }
   ],
   "scripts": {
+    
+    "publish": "npm run build:source && npm run build:tests && np",
     "lint": "eslint src test",
+    "build": "npm run build:source && npm run build:tests",
     "build:source": "rimraf dist/ && babel src/ --out-dir dist/",
     "build:tests": "rimraf test-dist/ && babel test/ --out-dir test-dist/",
     "clean": "rimraf dist/ && rimraf test-dist/",
@@ -46,6 +49,7 @@
     "gulp-mocha": "3.0.1",
     "gulp-rimraf": "0.2.0",
     "mocha": "3.1.0",
+    "np": "^2.20.1",
     "rimraf": "2.5.4",
     "run-sequence": "1.2.2"
   },
