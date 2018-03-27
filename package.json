@@ -26,10 +26,9 @@
     "url": "https://github.com/garritfra/glujs.git"
   },
   "keywords": [
-    "module",
-    "es6",
-    "es5",
-    "babel"
+    "Utils",
+    "Helper",
+    "Library"
   ],
   "devDependencies": {
     "babel-cli": "6.16.0",
