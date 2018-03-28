@@ -11,11 +11,12 @@
     }
   ],
   "scripts": {
-    "publish": "npm run build:source && npm run build:tests && np",
+    "publish": "npm run build && np",
     "lint": "eslint src test",
-    "build": "npm run build:source && npm run build:tests",
+    "build": "npm run build:source && npm run build:tests && npm run build:docs",
     "build:source": "rimraf dist/ && babel src/ --out-dir dist/",
     "build:tests": "rimraf test-dist/ && babel test/ --out-dir test-dist/",
+    "build:docs": "jsdoc src/ -d docs/",
     "clean": "rimraf dist/ && rimraf test-dist/",
     "test": "npm run build && node node_modules/mocha/bin/mocha --all --reporter spec test-dist/*",
     "example": "node example.js"
