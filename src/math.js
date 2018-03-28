@@ -1,4 +1,3 @@
-
 /**
  * Adds two numbers
  * @param {number} a number 1
@@ -39,9 +38,7 @@ export function divide(a, b) {
  * @param {Array<number>} arr Array
  */
 export function sum(arr) {
-  if (typeof arr === "number") {
-    return arr;
-  }
+  if (typeof arr === "number") return arr;
 
   let sum = 0;
   arr.map(num => {
