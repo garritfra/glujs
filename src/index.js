@@ -10,7 +10,7 @@ export {
 } from "./constants";
 
 //Functions related to Math
-export { add, subtract, multiply, divide } from "./math";
+export { add, subtract, multiply, divide, sum } from "./math";
 
 //Utility Functions
 export { now } from "./utils";
