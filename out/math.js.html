@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: math.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,69 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: math.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>
+/**
+ * Adds two numbers
+ * @param {number} a number 1
+ * @param {number} b number 2
+ */
+export function add(a, b) {
+  return a + b;
+}
 
+/**
+ * Subtracts two numbers
+ * @param {number} a number 1
+ * @param {number} b number 2
+ */
+export function subtract(a, b) {
+  return a - b;
+}
 
-    <h3> </h3>
+/**
+ * Multiplies two numbers
+ * @param {number} a number 1
+ * @param {number} b number 2
+ */
+export function multiply(a, b) {
+  return a * b;
+}
 
+/**
+ * Divides two numbers
+ * @param {number} a number 1
+ * @param {number} b number 2
+ */
+export function divide(a, b) {
+  return a / b;
+}
+/**
+ * returns the sum of an array
+ * @param {Array&lt;number>} arr Array
+ */
+export function sum(arr) {
+  if (typeof arr === "number") {
+    return arr;
+  }
 
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+  let sum = 0;
+  arr.map(num => {
+    sum += num;
+  });
+  return sum;
+}
+</code></pre>
+        </article>
+    </section>
 
 
 
