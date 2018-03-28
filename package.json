@@ -11,9 +11,9 @@
     }
   ],
   "scripts": {
-    "publish": "npm run build && np",
+    "publish": "npm run build && npm run build:docs && np",
     "lint": "eslint src test",
-    "build": "npm run build:source && npm run build:tests && npm run build:docs",
+    "build": "npm run build:source && npm run build:tests",
     "build:source": "rimraf dist/ && babel src/ --out-dir dist/",
     "build:tests": "rimraf test-dist/ && babel test/ --out-dir test-dist/",
     "build:docs": "jsdoc src/ -d docs/",
