@@ -14,7 +14,7 @@
     "publish": "npm run build && npm run && np && npm run build:docs",
     "lint": "eslint src test",
     "build": "npm run build:source && npm run build:tests",
-    "build:source": "rimraf dist/ && babel src/ --out-dir dist/",
+    "build:source": "tsc",
     "build:tests": "rimraf test-dist/ && babel test/ --out-dir test-dist/",
     "build:docs": "jsdoc src/ -d docs/",
     "clean": "rimraf dist/ && rimraf test-dist/",
@@ -52,7 +52,8 @@
     "mocha-junit-reporter": "^1.17.0",
     "np": "^2.20.1",
     "rimraf": "2.5.4",
-    "run-sequence": "1.2.2"
+    "run-sequence": "1.2.2",
+    "typescript": "^2.8.1"
   },
   "engine": "node >= 0.10.x",
   "homepage": "https://github.com/garritfra/glujs#readme",

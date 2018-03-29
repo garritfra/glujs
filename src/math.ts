@@ -3,7 +3,7 @@
  * @param {number} a number 1
  * @param {number} b number 2
  */
-export function add(a, b) {
+export function add(a: number, b: number): number {
   return a + b;
 }
 
@@ -12,7 +12,7 @@ export function add(a, b) {
  * @param {number} a number 1
  * @param {number} b number 2
  */
-export function subtract(a, b) {
+export function subtract(a: number, b: number): number {
   return a - b;
 }
 
@@ -21,7 +21,7 @@ export function subtract(a, b) {
  * @param {number} a number 1
  * @param {number} b number 2
  */
-export function multiply(a, b) {
+export function multiply(a: number, b: number):number {
   return a * b;
 }
 
@@ -30,17 +30,17 @@ export function multiply(a, b) {
  * @param {number} a number 1
  * @param {number} b number 2
  */
-export function divide(a, b) {
+export function divide(a: number, b: number):number {
   return a / b;
 }
 /**
  * returns the sum of an array
  * @param {Array<number>} arr Array
  */
-export function sum(arr) {
+export function sum(arr: Array<number>):number {
   if (typeof arr === "number") return arr;
 
-  let sum = 0;
+  let sum: number = 0;
   arr.map(num => {
     sum += num;
   });
