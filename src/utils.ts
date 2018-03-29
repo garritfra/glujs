@@ -1,8 +1,7 @@
-
 /**
  * returns the current time
  * @returns {Date} Current Time
  */
-export function now() {
-  return Date.now();
+export function now(): Date {
+  return new Date();
 }
