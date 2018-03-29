@@ -16,7 +16,7 @@
     "build": "npm run build:source && npm run build:tests",
     "build:source": "rimraf dist/ && babel src/ --out-dir dist/",
     "build:tests": "rimraf test-dist/ && babel test/ --out-dir test-dist/",
-    "build:docs": "jsdoc src/ -d docs/ -t node_modules/minami",
+    "build:docs": "jsdoc src/ -d docs/",
     "clean": "rimraf dist/ && rimraf test-dist/",
     "test": "npm run build && node node_modules/mocha/bin/mocha --all --reporter spec test-dist/*",
     "example": "node example.js"
