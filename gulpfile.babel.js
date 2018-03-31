@@ -1,5 +1,6 @@
 import gulp from 'gulp';
 import babel from 'gulp-babel';
+import ts from 'gulp-typescript';
 import mocha from 'gulp-mocha';
 import eslint from 'gulp-eslint';
 import rimraf from 'gulp-rimraf';
@@ -11,6 +12,10 @@ var config = {
       src: 'src/**/*.js',
       dist: 'dist/'
     },
+    ts: {
+      src: 'src/**/*.js',
+      dist: '/'
+    },
     test: {
       src: 'test/**/*.js',
       dist: 'test-dist/',
@@ -18,6 +23,15 @@ var config = {
     }
   }
 };
+
+gulp.task('compile-typescript', function () {
+  return gulp.src('src/**/*.ts')
+      .pipe(ts({
+          noImplicitAny: true,
+          outDir: './'
+      }))
+      .pipe(gulp.dest(''));
+});
 
 gulp.task('clean', () =>
   gulp.src([config.paths.js.dist, config.paths.test.dist])
@@ -69,5 +83,5 @@ gulp.task('test', ['babel'], () =>
 
 // Default Task
 gulp.task('default', () =>
-  runSequence('clean', ['babel', 'test'])
+  runSequence('clean', ['compile-typescript', 'babel', 'test'])
 );
