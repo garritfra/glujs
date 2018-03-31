@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { add, subtract, multiply, divide, sum } from "../dist/math";
+import { add, subtract, multiply, divide, sum } from "../math";
 
 describe("add", () => {
   it("calculates 2 + 2 = 4", () => {

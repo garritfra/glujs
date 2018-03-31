@@ -1,4 +1,4 @@
-import { capitalizeString } from "../dist/strings";
+import { capitalizeString } from "../strings";
 import { expect } from "chai";
 
 describe("capitalizeString", () => {

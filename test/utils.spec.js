@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { now } from "../dist/utils"
+import { now } from "../utils"
 
 describe("now", () => {
   xit("returns the current time", () => {
