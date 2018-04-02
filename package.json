@@ -16,7 +16,7 @@
     "build": "npm run build:source",
     "build:source": "gulp compile-typescript",
     "build:tests": "",
-    "build:docs": "jsdoc src/ -d docs/",
+    "build:docs": "jsdoc ./glu.js -d docs/",
     "clean": "rimraf dist/ && rimraf test-dist/",
     "test": "",
     "example": "node example.js"
