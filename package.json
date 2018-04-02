@@ -13,12 +13,12 @@
   "scripts": {
     "publish": "npm run build && npm run && np && npm run build:docs",
     "lint": "eslint src test",
-    "build": "npm run build:source && npm run build:tests",
+    "build": "npm run build:source",
     "build:source": "gulp compile-typescript",
-    "build:tests": "rimraf test-dist/ && babel test/ --out-dir test-dist/",
+    "build:tests": "",
     "build:docs": "jsdoc src/ -d docs/",
     "clean": "rimraf dist/ && rimraf test-dist/",
-    "test": "npm run build && node node_modules/mocha/bin/mocha --all --reporter spec test-dist/*",
+    "test": "",
     "example": "node example.js"
   },
   "repository": {
