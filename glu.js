@@ -103,3 +103,4 @@ exports.capitalizeString = capitalizeString;
 function toUpper(str) {
   return str.toUpperCase();
 }
+exports.toUpper = toUpper;
