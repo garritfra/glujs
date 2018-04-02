@@ -1,4 +1,3 @@
-exports.__esModule = true;
 /**
  * Pi with 10 decimal digits
  */
@@ -92,7 +91,6 @@ exports.now = function() {
 
 //-----------------------------------------------
 
-exports.__esModule = true;
 function capitalizeString(str) {
     var lowercaseStr = str.toLowerCase();
     var firstLetter = lowercaseStr[0].toUpperCase();
