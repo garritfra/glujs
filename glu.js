@@ -99,3 +99,7 @@ function capitalizeString(str) {
     return capitalizedString;
 }
 exports.capitalizeString = capitalizeString;
+
+function toUpper(str) {
+  return str.toUpperCase();
+}
