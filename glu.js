@@ -91,6 +91,10 @@ exports.now = function() {
 
 //-----------------------------------------------
 
+/**
+ * Capitalizes the first letter of a string
+ * @param {string} string 
+ */
 function capitalizeString(str) {
     var lowercaseStr = str.toLowerCase();
     var firstLetter = lowercaseStr[0].toUpperCase();
@@ -100,6 +104,10 @@ function capitalizeString(str) {
 }
 exports.capitalizeString = capitalizeString;
 
+/**
+ * Converts a string to upper case
+ * @param {string} str 
+ */
 function toUpper(str) {
   return str.toUpperCase();
 }
