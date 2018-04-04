@@ -112,3 +112,12 @@ function toUpper(str) {
   return str.toUpperCase();
 }
 exports.toUpper = toUpper;
+
+/**
+ * Converts a string to lower case
+ * @param {string} str 
+ */
+function toLower(str) {
+  return str.toLowerCase();
+}
+exports.toLower = toLower;
