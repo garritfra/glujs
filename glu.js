@@ -97,6 +97,23 @@ function min(arr) {
 }
 exports.min = min;
 
+/**
+ * returns the largest element in an array
+ * @param {array<numbers>} arr 
+ */
+function max(arr) {
+  let max = 0;
+
+  arr.forEach(element => {
+    if (element > max) {
+      max = element;
+    }
+  });
+
+  return max;
+}
+exports.max = max;
+
 //-----------------------------------------------
 
 /**
