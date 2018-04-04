@@ -79,6 +79,24 @@ function sum(arr) {
 }
 exports.sum = sum;
 
+
+/**
+ * returns the lowest element in an array
+ * @param {array<numbers>} arr 
+ */
+function min(arr) {
+  let min = 0;
+
+  arr.forEach(element => {
+    if (element < min) {
+      min = element;
+    }
+  });
+
+  return min;
+}
+exports.min = min;
+
 //-----------------------------------------------
 
 /**
