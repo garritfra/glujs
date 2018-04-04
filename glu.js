@@ -82,7 +82,7 @@ exports.sum = sum;
 
 /**
  * returns the lowest element in an array
- * @param {array<numbers>} arr 
+ * @param {Array<number>} arr 
  */
 function min(arr) {
   let min = 0;
@@ -99,7 +99,7 @@ exports.min = min;
 
 /**
  * returns the largest element in an array
- * @param {array<numbers>} arr 
+ * @param {Array<number>} arr 
  */
 function max(arr) {
   let max = 0;
