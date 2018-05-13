@@ -41,13 +41,11 @@ exports.divide = divide;
  * @param {Array<number>} arr Array
  */
 function sum(arr) {
-    if (typeof arr === "number")
-        return arr;
-    var sum = 0;
-    arr.map(function (num) {
-        sum += num;
+    if (arr.length == 0)
+        return undefined;
+    return arr.reduce(function (element, max) {
+        return (max += element);
     });
-    return sum;
 }
 exports.sum = sum;
 /**

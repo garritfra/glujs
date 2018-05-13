@@ -34,13 +34,12 @@ export function divide(a: number, b: number): number {
  * returns the sum of an array
  * @param {Array<number>} arr Array
  */
-export function sum(arr: Array<number>): number {
-  if (typeof arr === "number") return arr;
-  var sum = 0;
-  arr.map(function(num) {
-    sum += num;
+export function sum(arr: Array<number>) {
+  if (arr.length == 0) return undefined;
+
+  return arr.reduce((element, max) => {
+    return (max += element);
   });
-  return sum;
 }
 
 /**

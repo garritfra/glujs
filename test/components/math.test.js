@@ -67,7 +67,9 @@ describe("Sum", () => {
 
   xit("adds a two dimentional array");
 
-  xit("doesn't get a value and returns undefined");
+  it("doesn't get a value and returns undefined", () => {
+    expect(sum([])).toBe(undefined);
+  });
 });
 
 describe("min", () => {
