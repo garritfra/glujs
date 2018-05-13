@@ -1,4 +1,4 @@
-const { capitalizeString, toUpper, toLower } = require("../../dist/index");
+const { capitalizeString, toUpper, toLower } = require("../../src/index");
 
 describe("capitalizeString", () => {
   it("capitalizes a lowercase string", () => {

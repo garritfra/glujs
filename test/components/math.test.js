@@ -6,7 +6,7 @@ const {
   sum,
   min,
   max
-} = require("../../dist/index");
+} = require("../../src/index");
 
 describe("add", () => {
   it("adds two positive numbers", () => {
@@ -78,7 +78,7 @@ describe("min", () => {
   });
 
   it("finds the lowest value including strings", () => {
-    expect(min(1, 2, "test")).toBe(undefined);
+    expect(min(1, 2, "test")).toBe(NaN);
   });
 
   it("doesn't get a value and returns undefined", () => {
@@ -92,7 +92,7 @@ describe("max", () => {
   });
 
   it("finds the highest value including strings", () => {
-    expect(max(1, 2, "test")).toBe(undefined);
+    expect(max(1, 2, "test")).toBe(NaN);
   });
 
   it("doesn't get a value and returns undefined", () => {
