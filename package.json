@@ -1,6 +1,6 @@
 {
   "name": "glujs",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "author": "garritfra",
   "main": "src/index.js",
   "description": "Simple Utility Library",
@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "publish": "npm run build:docs && np && npm run build:docs",
-    "build:docs": "jsdoc ./glu.js -d docs/",
+    "build:docs": "jsdoc ./src/index.js -d docs/",
     "test": "jest"
   },
   "repository": {
