@@ -12,24 +12,17 @@
   ],
   "scripts": {
     "publish": "npm run build && npm run && np && npm run build:docs",
-    "lint": "eslint src test",
     "build": "npm run build:source",
-    "build:source": "gulp compile-typescript",
+    "build:source": "tsc",
     "build:tests": "",
     "build:docs": "jsdoc ./glu.js -d docs/",
-    "clean": "rimraf dist/ && rimraf test-dist/",
-    "test": "",
-    "example": "node example.js"
+    "test": ""
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/garritfra/glujs.git"
   },
-  "keywords": [
-    "Utils",
-    "Helper",
-    "Library"
-  ],
+  "keywords": ["Utils", "Helper", "Library"],
   "devDependencies": {
     "typescript": "^2.8.1"
   },
