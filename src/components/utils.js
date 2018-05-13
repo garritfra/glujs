@@ -2,6 +2,6 @@
  * returns the current time
  * @returns {Date} Current Time
  */
-export function now() {
+exports.now = () => {
   return new Date();
-}
+};
