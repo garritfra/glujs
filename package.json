@@ -2,7 +2,7 @@
   "name": "glujs",
   "version": "0.5.0",
   "author": "garritfra",
-  "main": "glu.js",
+  "main": "index.js",
   "description": "Simple Utility Library",
   "contributors": [
     {
@@ -25,11 +25,7 @@
     "type": "git",
     "url": "https://github.com/garritfra/glujs.git"
   },
-  "keywords": [
-    "Utils",
-    "Helper",
-    "Library"
-  ],
+  "keywords": ["Utils", "Helper", "Library"],
   "devDependencies": {
     "babel-cli": "6.16.0",
     "babel-core": "6.16.0",
