@@ -1,6 +1,6 @@
 {
   "name": "glujs",
-  "version": "0.5.1",
+  "version": "0.5.0",
   "author": "garritfra",
   "main": "dist/index.js",
   "description": "Simple Utility Library",
@@ -11,7 +11,6 @@
     }
   ],
   "scripts": {
-    "publish": "npm run build && npm run && np && npm run build:docs",
     "build": "npm run build:source",
     "build:source": "tsc",
     "build:tests": "",
@@ -22,13 +21,7 @@
     "type": "git",
     "url": "https://github.com/garritfra/glujs.git"
   },
-  "keywords": [
-    "Utils",
-    "Helper",
-    "Library",
-    "glujs",
-    "Useful"
-  ],
+  "keywords": ["Utils", "Helper", "Library", "glujs", "Useful"],
   "devDependencies": {
     "typescript": "^2.8.1"
   },
