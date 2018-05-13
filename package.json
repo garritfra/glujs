@@ -1,6 +1,6 @@
 {
   "name": "glujs",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "author": "garritfra",
   "main": "src/index.js",
   "description": "Simple Utility Library",
@@ -19,10 +19,9 @@
     "type": "git",
     "url": "https://github.com/garritfra/glujs.git"
   },
-  "keywords": ["Utils", "Helper", "Library"],
   "devDependencies": {
     "jest": "^22.4.3",
-    "typescript": "^2.8.1"
+    "jsdoc": "^3.5.5"
   },
   "engine": "node >= 0.10.x",
   "homepage": "https://github.com/garritfra/glujs#readme",
