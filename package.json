@@ -16,7 +16,7 @@
     "build:source": "tsc",
     "build:tests": "",
     "build:docs": "jsdoc ./glu.js -d docs/",
-    "test": ""
+    "test": "npm run build && jest"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   },
   "keywords": ["Utils", "Helper", "Library"],
   "devDependencies": {
+    "jest": "^22.4.3",
     "typescript": "^2.8.1"
   },
   "engine": "node >= 0.10.x",

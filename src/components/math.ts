@@ -48,13 +48,13 @@ export function sum(arr: Array<number>): number {
  * @param {Array<number>} arr
  */
 export function min(arr: Array<number>): number {
-  let min = 0;
+  let min = arr[0];
 
-  arr.forEach(element => {
+  for (const element of arr) {
     if (element < min) {
       min = element;
     }
-  });
+  }
 
   return min;
 }
@@ -64,13 +64,13 @@ export function min(arr: Array<number>): number {
  * @param {Array<number>} arr
  */
 export function max(arr: Array<number>): number {
-  let max = 0;
+  let max = arr[0];
 
-  arr.forEach(element => {
+  for (const element of arr) {
     if (element > max) {
       max = element;
     }
-  });
+  }
 
   return max;
 }

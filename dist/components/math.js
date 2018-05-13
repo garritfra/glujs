@@ -55,12 +55,13 @@ exports.sum = sum;
  * @param {Array<number>} arr
  */
 function min(arr) {
-    var min = 0;
-    arr.forEach(function (element) {
+    var min = arr[0];
+    for (var _i = 0, arr_1 = arr; _i < arr_1.length; _i++) {
+        var element = arr_1[_i];
         if (element < min) {
             min = element;
         }
-    });
+    }
     return min;
 }
 exports.min = min;
@@ -69,12 +70,13 @@ exports.min = min;
  * @param {Array<number>} arr
  */
 function max(arr) {
-    var max = 0;
-    arr.forEach(function (element) {
+    var max = arr[0];
+    for (var _i = 0, arr_2 = arr; _i < arr_2.length; _i++) {
+        var element = arr_2[_i];
         if (element > max) {
             max = element;
         }
-    });
+    }
     return max;
 }
 exports.max = max;
