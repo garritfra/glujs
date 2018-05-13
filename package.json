@@ -19,7 +19,6 @@
     "type": "git",
     "url": "https://github.com/garritfra/glujs.git"
   },
-  "keywords": ["Utils", "Helper", "Library", "glujs", "Useful"],
   "devDependencies": {
     "jest": "^22.4.3",
     "typescript": "^2.8.1"
