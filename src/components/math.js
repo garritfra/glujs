@@ -59,3 +59,7 @@ exports.max = arr => {
   if (!(arr instanceof Array)) return NaN;
   return arr.sort().pop();
 };
+
+exports.pow = (num, exp) => {
+  return num ** exp;
+};

@@ -5,7 +5,8 @@ const {
   divide,
   sum,
   min,
-  max
+  max,
+  pow
 } = require("../../src/index");
 
 describe("add", () => {
@@ -97,5 +98,15 @@ describe("max", () => {
 
   it("doesn't get a value and returns undefined", () => {
     expect(max([])).toBe(undefined);
+  });
+});
+
+describe("pow", () => {
+  it("calculates 3 ^ 3 = 27", () => {
+    expect(pow(3, 3)).toBe(27);
+  });
+
+  it("calculates to the power of 0 = 1", () => {
+    expect(pow(4, 0)).toBe(1);
   });
 });
