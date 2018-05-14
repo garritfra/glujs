@@ -60,10 +60,21 @@ exports.max = arr => {
   return arr.sort().pop();
 };
 
+/**
+ * calculates a given number to the power of the given number
+ * @param {number} number
+ * @param {number} exponent
+ * @returns {number} number to the power of the exponent
+ */
 exports.pow = (num, exp) => {
   return num ** exp;
 };
 
+/**
+ * returns the absolute number of a given parameter
+ * @example glu.abs(-5) = 5
+ * @param {number} number
+ */
 exports.abs = num => {
   return num < 0 ? -num : num;
 };
