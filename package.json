@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "publish": "npm run build:docs && np && npm run build:docs",
-    "build:docs": "jsdoc ./src/* -d docs/",
+    "build:docs": "jsdoc -c jsdoc.json",
     "test": "jest"
   },
   "repository": {
@@ -30,5 +30,7 @@
   "bugs": {
     "url": "https://github.com/garritfra/glujs/issues"
   },
-  "dependencies": {}
+  "dependencies": {
+    "docdash": "^0.4.0"
+  }
 }
