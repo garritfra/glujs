@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "publish": "npm run build:docs && np && npm run build:docs",
-    "build:docs": "jsdoc ./src/index.js -d docs/",
+    "build:docs": "jsdoc ./src/* -d docs/",
     "test": "jest"
   },
   "repository": {

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: strings.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,47 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: strings.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Capitalizes the first letter of a string
+ * @param {string} string
+ * @returns {string} capitalized string
+ */
+exports.capitalizeString = str => {
+  const lowercaseStr = str.toLowerCase();
+  const firstLetter = lowercaseStr[0].toUpperCase();
+  const remainingWord = lowercaseStr.substr(1);
+  return firstLetter + remainingWord;
+};
 
+/**
+ * Converts a string to upper case
+ * @param {string} string
+ * @returns {string} uppercase string
+ */
+exports.toUpper = str => {
+  return str.toUpperCase();
+};
 
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+/**
+ * Converts a string to lower case
+ * @param {string} string
+ * @returns {string} lowercase string
+ */
+exports.toLower = str => {
+  return str.toLowerCase();
+};
+</code></pre>
+        </article>
+    </section>
 
 
 
