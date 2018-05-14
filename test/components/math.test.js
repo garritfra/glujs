@@ -6,7 +6,8 @@ const {
   sum,
   min,
   max,
-  pow
+  pow,
+  abs
 } = require("../../src/index");
 
 describe("add", () => {
@@ -108,5 +109,19 @@ describe("pow", () => {
 
   it("calculates to the power of 0 = 1", () => {
     expect(pow(4, 0)).toBe(1);
+  });
+});
+
+describe("abs", () => {
+  it("gets the absolute number of 5", () => {
+    expect(abs(5)).toBe(5);
+  });
+
+  it("gets the absolute numver of -5", () => {
+    expect(abs(-5)).toBe(5);
+  });
+
+  it("returns 0 as an absolute number", () => {
+    expect(abs(0)).toBe(0);
   });
 });

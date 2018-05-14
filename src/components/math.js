@@ -63,3 +63,7 @@ exports.max = arr => {
 exports.pow = (num, exp) => {
   return num ** exp;
 };
+
+exports.abs = num => {
+  return num < 0 ? -num : num;
+};
