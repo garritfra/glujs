@@ -82,3 +82,5 @@ exports.abs = num => {
 exports.isEven = num => {
   return num % 2 == 0;
 };
+
+exports.isOdd = num => !exports.isEven(num);
