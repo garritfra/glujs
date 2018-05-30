@@ -16,6 +16,8 @@ exports.random = () => {
 
 /**
  * generates a random number between the two specified parameters
+ *
+ * This function uses an algorithm to use the current date in milliseconds to generate a number in the given range
  * @param {number} from
  * @param {number} to
  * @returns {number} random number in between the two specified numbers

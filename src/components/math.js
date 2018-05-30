@@ -78,3 +78,7 @@ exports.pow = (num, exp) => {
 exports.abs = num => {
   return num < 0 ? -num : num;
 };
+
+exports.isEven = num => {
+  return num % 2 == 0;
+};
