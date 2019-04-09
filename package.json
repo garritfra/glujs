@@ -1,6 +1,6 @@
 {
   "name": "glujs",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "author": "garritfra",
   "main": "src/index.js",
   "description": "Simple Utility Library",
